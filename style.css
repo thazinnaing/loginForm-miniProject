@@ -21,7 +21,7 @@ body{
 }
 .innerContainer{
     width: 100%;
-    height: 80%;
+    height: 90%;
     
     display: flex;
     flex-direction: column;
@@ -87,10 +87,12 @@ body{
     display: flex;
     align-items: center;
     font-size: 10px;
+    opacity: 0.8;
 }
 .text2{
     height: 40%;
     font-size: 30px;
+    opacity: 1;
 
 }
 .text3{
@@ -154,14 +156,14 @@ body{
         width: 70%;
     }
     .leftBar{
-        width: 45%;
+        width: 50%;
     }
     .logo{
-        width: 15px;
-        height: 15px;
+        width: 13px;
+        height: 13px;
     }
     .linkTag a{
-        font-size: 13px;
+        font-size: 10px;
     }
     .text1,.text3{
         font-size: 12px;
@@ -170,166 +172,58 @@ body{
         font-size: 23px;
     }
     .formContainer{
-        width: 200px;
+        width: 150px;
     }
     .content{
-        height: 28px;
+        font-size: 8px;
     }
-    .innerContainer{
-        height: 90%;
-    }
-    .submit{
-        font-size: 10px;
-    }
-    
-    
 }
-@media screen and (max-width: 400px){
-    .leftBar{
-        width: 50%;
-    }
-    .linkTag a{
-        font-size: 10px;
-    }
-   
-}
+
 @media screen and (min-width: 640px){
     .navigationBar{
         width: 50%;
     }
+    .logo{
+        width: 15px;
+        height: 15px;
+    }
     .leftBar{
         width:40%;
     }
-    .innerContainer{
-        height: 90%;
-    }
-    .text1, .text3{
-        font-size: 8px;
-    }
-    .text2{
-        font-size: 20px;
-    }
-    .content{
-        height: 30px;
-        font-size: 10px;
-    }
-    .submitContainer{
-        margin-top: 5px;
+    .linkTag a{
+        font-size: 12px;
     }
     .formContainer{
         width: 200px;
     }
+    .content{
+        font-size: 10px;
+    }
+
 }
 @media screen and (min-width: 768px){
     .leftBar{
-        width: 50%;
-    }
-    .linkTag a{
-        font-size: 20px;
+        width: 40%;
     }
     .logo{
         width: 20px;
         height: 20px;
-    }
-    .content{
-        height: 30px;
-        font-size: 15px;
-    }
-    .text{
-        font-size: 15px;
-    }
-    .text2{
-        font-size: 30px;
     }
     .formContainer{
         width: 300px;
     }
     
 }
-@media screen and (min-width: 844px) {
-    .navigationBar{
-        width: 50%;
-    }
-    .linkTag a{
-        font-size: 15px;
-    }
+@media screen and (min-width: 1024px){
     .leftBar{
         width: 35%;
     }
-    .innerContainer{
-        height: 90%;
-    }
-    .text1, .text3{
-        font-size: 8px;
-    }
-    .text2{
-        font-size: 20px;
-    }
-    .content{
-        height: 25px;
-        font-size: 10px;
-    }
-    .submitContainer{
-        margin-top: 5px;
-    }
-    .formContainer{
-        width: 230px;
-    }
-}
-@media screen and (min-width: 1024px){
-    .leftBar{
-        width: 45%;
-    }
     .linkTag a{
-        font-size: 23px;
-    }
-    .logo{
-        width: 25px;
-        height: 25px;
-    }
-    .content{
-        height: 30px;
         font-size: 15px;
-    }
-    .text1,.text3{
-        font-size: 15px;
-    }
-    .text2{
-        font-size: 30px;
     }
     .formContainer{
         width: 350px;
     }
 
-}
-@media screen and (min-width: 1280px){
-    .leftBar{
-        width: 40%;
-    }
-    .linkTag a{
-        font-size: 27px;
-    }
-    .content{
-        height: 35px;
-        font-size: 16px;
-    }
-    .text1, .text3{
-        font-size: 15px;
-    }
-    .text2{
-        font-size: 30px;
-    }
-    .text{
-        height: 25%;
-    }
-    .formSession{
-        height: 57%;
-    }
-    .loginForm{
-        height: 65%;
-    }
-    .formContainer{
-        width: 350px;
-    }
 }
 
