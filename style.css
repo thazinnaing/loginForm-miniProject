@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     width: 100vw;
     height: 100vh;
@@ -5,18 +8,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-*{
-    box-sizing: border-box;
+    overflow: hidden;
 }
 .container{
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     background-image: url(https://cdn.pixabay.com/photo/2015/12/29/14/51/mountains-1112911_640.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     opacity: 0.9;
 }
 .innerContainer{
@@ -28,20 +29,33 @@ body{
     justify-content: space-between;
 }
 .navigationBar{
-    width: 50%;
     height: 20%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.leftSession{
+    width: 50%;
 
     display: flex;
     justify-content: space-around;
+}
+.rightSession{
+    width: 10%;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
 }
 .leftBar{
-    width: 45%;
+    height: 100%;
+    width: 40%;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 .logo{
     width: 25px;
@@ -67,6 +81,7 @@ body{
 .app a{
     opacity: 1;
 }
+
 .loginForm{
     height: 60%;
     display: flex;
@@ -86,7 +101,7 @@ body{
     height: 20%;
     display: flex;
     align-items: center;
-    font-size: 10px;
+    font-size: 15px;
     opacity: 0.8;
 }
 .text2{
@@ -95,11 +110,6 @@ body{
     opacity: 1;
 
 }
-.text3{
-    height: 18%;
-    font-size: 10px;
-}
-
 .text3 a{
     margin-left: 10px;
     text-decoration: none;
@@ -112,9 +122,11 @@ body{
     width: 50%;
     height: 60%;
     display: flex;
+    
 }
 .formContainer{
-    width: 250px;
+    
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -123,10 +135,10 @@ body{
 }
 .nameContainer{
     width: 100%;
-    display: grid;
-    grid-template: auto / 45% 45%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    
+    height: 35%;
 }
 .submitContainer{
     margin-top: 13px;
@@ -136,94 +148,83 @@ body{
     justify-content: space-between;
 }
 .content{
+    height: 40px;
     color: white;
     background-color: rgb(50,54,66);
     width: 100%;
-    height: 30px;
     border-radius: 7px;
     border-style: none;
-    
+    padding:5px 10px;
+}
+.content:focus{
+    outline: none;
 }
 .submit{
     border-radius: 25px;
+    cursor: pointer;
 }
 .submit2{
     background-color: blue;
 }
 
 @media screen and (min-width: 280px){
-    .navigationBar{
-        width: 70%;
+    .leftSession{
+        display: none;
     }
-    .leftBar{
-        width: 50%;
+    .rightSession{
+        display: flex;
     }
-    .logo{
-        width: 13px;
-        height: 13px;
+    .submitContainer{
+        grid-template: auto/ 49% 49%;
     }
-    .linkTag a{
-        font-size: 10px;
+    .textSession{
+        height: 25%;
     }
-    .text1,.text3{
-        font-size: 12px;
-    }
-    .text2{
-        font-size: 23px;
-    }
-    .formContainer{
-        width: 150px;
-    }
-    .content{
-        font-size: 8px;
+    .formSession{
+        height: 70%;
     }
 }
 
 @media screen and (min-width: 640px){
-    .navigationBar{
-        width: 50%;
-    }
-    .logo{
-        width: 15px;
-        height: 15px;
-    }
     .leftBar{
-        width:40%;
+        width: 42%;
     }
-    .linkTag a{
-        font-size: 12px;
+    .leftSession{
+        display: flex;
     }
-    .formContainer{
-        width: 200px;
+    .rightSession{
+        display: none;
     }
-    .content{
-        font-size: 10px;
+    .textSession{
+        height: 33%;
     }
-
-}
-@media screen and (min-width: 768px){
-    .leftBar{
-        width: 40%;
+    .formSession{
+        height: 60%;
     }
-    .logo{
-        width: 20px;
-        height: 20px;
+    .nameContainer{
+        width: 100%;
+        display: grid;
+        grid-template: auto/ 45% 45% ;
+        height: 15%;
     }
-    .formContainer{
-        width: 300px;
+    .submitContainer{
+        grid-template: auto/ 47% 47%;
     }
-    
 }
 @media screen and (min-width: 1024px){
     .leftBar{
-        width: 35%;
+        width: 27%;
     }
-    .linkTag a{
-        font-size: 15px;
-    }
-    .formContainer{
-        width: 350px;
-    }
-
 }
+@media screen and (min-width: 1280px){
+    .leftBar{
+        width: 22%;
+    }
+}
+@media screen and (min-width: 1536px){
+    .leftBar{
+        width: 17%;
+    }
+}
+
 
